@@ -30,6 +30,21 @@
               ],
             }
           }
+        ],
+        ['OS=="freebsd"',
+          {
+            'include_dirs': [
+               '/usr/local/include'
+             ],
+             'libraries': [
+               '/usr/local/lib'
+             ],
+            'link_settings': {
+              'libraries': [
+                '-lgmp'
+              ],
+            }
+          }
         ]
       ]
     }
